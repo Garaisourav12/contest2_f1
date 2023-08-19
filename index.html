@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/3038/3038089.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="brand">
+                <a href="#"><h1>Library System</h1></a>
+            </div>
+            <div class="navmenu">
+                <a href="#books">Books</a>
+                <a href="#register">Register</a>
+                <a href="#">Contuct Us</a>
+                <a href="#">Logout</a>
+            </div>
+        </nav>
+
+        <section class="books" id="books">
+            <div class="books-container">
+                <h2>Books</h2>
+
+                <table class="root">
+                    <thead>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a href="https://en.wikipedia.org/wiki/Black_Beauty" target="_blank" class="book-link"><p>Black Beauty</p></a>
+                                <table class="inner" style="margin-top: 10px;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Publication Date: 1887</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Page Count: 255</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ISBN: 978-0486275437</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>Anna Sewell</td>
+                            <td>Children's literature</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <a href="https://en.wikipedia.org/wiki/The_Man_Who_Was_Thursday" target="_blank" class="book-link"><p>The Man Who Was Thursday</p></a>
+                                <table class="inner" style="margin-top: 10px;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Publication Date: 1908</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Page Count: 330</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ISBN: 978-0486266848</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>G. K. Chesterton</td>
+                            <td>Thriller, Philosophical novel, Adventure, Fantasy</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <a href="https://en.wikipedia.org/wiki/What_Katy_Did" target="_blank" class="book-link"><p>What Katy Did</p></a>
+                                <table class="inner" style="margin-top: 10px;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Publication Date: 1872</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Page Count: 277</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ISBN: 978-0140367110</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>Susan Coolidge</td>
+                            <td>Children's literature Coming of age</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <a href="https://en.wikipedia.org/wiki/Barnaby_Rudge" target="_blank" class="book-link"><p>Barnaby Rudge</p></a>
+                                <table class="inner" style="margin-top: 10px;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Publication Date: 1841</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Page Count: 800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ISBN: 978-0140437284</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>Charles Dickens</td>
+                            <td>Novel</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <a href="https://en.wikipedia.org/wiki/The_Scarlet_Letter" target="_blank" class="book-link"><p>The Scarlet Letter</p></a>
+                                <table class="inner" style="margin-top: 10px;">
+                                    <tbody>
+                                        <tr>
+                                            <td>Publication Date: 1850</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Page Count: 192</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ISBN: 978-0486280486</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>Nathaniel Hawthorne</td>
+                            <td>Romantic, Historical</td>
+                            <td>Available</td>
+                        </tr>
+                         
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="register" id="register">
+            <div class="form-container">
+                <h2>Register</h2>
+                <form action="backend.js" method="post" class="register-form">
+                    <div class="input-group">
+                        <label for="f_name">First Name: </label>
+                        <input type="text" name="f_name" id="f_name" placeholder="First Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="l_name">Last Name: </label>
+                        <input type="text" name="l_name" id="l_name" placeholder="Last Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="dob">Date Of Birth: </label>
+                        <input type="date" name="dob" id="dob" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="age">Age: </label>
+                        <input type="number" name="age" id="age" min="5" max="100" placeholder="Age" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password" placeholder="password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="c_password">Confirm Password: </label>
+                        <input type="password" name="c_password" id="c_password" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="input-group" id="btn-group">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer style="margin-top: 20px; background-color: green; color: white; padding: 5px 0;">
+            <center><span>&copy; 2023 Sourav Garai. All rights reserved.</span></center>
+        </footer>
+    </main>
+</body>
+</html>
